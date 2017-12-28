@@ -60,7 +60,7 @@ $f3->route('GET /audio/@title/@description/@image/@date/@filename',
 
 		//here's an example array containing some of the fields.
 
-		$content = array('title'=> $f3->get('PARAMS.title'),'description'=> $f3->get('PARAMS.description'));
+		$content = array('title'=> $f3->get('PARAMS.title'),'description'=> $f3->get('PARAMS.description'),'image'=> $f3->get('PARAMS.image'),'date'=> $f3->get('PARAMS.date'),'filename'=> $f3->get('PARAMS.filename'));
 
 		$f3->set('content',$content);
 		
