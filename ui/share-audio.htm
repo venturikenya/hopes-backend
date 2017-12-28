@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hope Church Sermon - {{ @content.description}} - {{ @content.date}}</title>
+    <!-- All variables should go here -->
+  <meta property="og:url"           content="http://www.hope-church-domain.com/ui/assets/audio/{{ @content.filename}}"/>
+  <meta property="og:type"          content="music.song" />
+  <meta property="og:title"         content="{{ @content.title}}" />
+  <meta property="og:description"   content="{{ @content.description}} - {{ @content.date}}" />
+  <meta property="og:image"         content="https://www.hope-church-domain.com/ui/assets/images/{{ @content.image}}" />
+  <meta property="og:audio:type"    content="audio./vnd.facebook.bridge" />
+  <meta property="og:site_name" content="World Hope Church Lavington"/>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+ <div class="fb-share-button" data-href="http://www.hope-church-domain.com/ui/assets/audio/{{ @content.filename}}"><a target="_blank" href="http://www.hope-church-domain.com/ui/assets/audio/{{ @content.filename}}">Share</a></div>
+</body>
+</html>
+
+
